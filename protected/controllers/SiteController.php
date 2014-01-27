@@ -38,6 +38,7 @@ class SiteController extends Controller
 		$this->render('tools');
 	}
 
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */
@@ -103,6 +104,12 @@ class SiteController extends Controller
 		// display the login form
 		$this->render('login',array('model'=>$model));
 	}
+	// Добавил для отображения конкретного товара из прайса//
+	//public function actionLogPerOne($value='')
+	//{
+		//$this->tools = Tool::model()->findAll();
+		//$this->render('LogPerOane');
+	//}
 
 	/**
 	 * Logs out the current user and redirect to homepage.
